@@ -1,0 +1,57 @@
+Xshell速记
+2
+登录
+3
+1、登录堡垒机，填主机地址，登录用户名和密码
+4
+2、:ssh username@IPhost password 
+5
+常用linux命令
+6
+1、磁盘空间
+7
+df
+8
+查看磁盘使用情况
+9
+ 
+10
+du -sh
+11
+当前目录大小
+12
+ 
+13
+du --max-depth=1 -h
+14
+子目录的大小
+15
+ 
+16
+du -sh tomcat*
+17
+tomcat开头的子目录大小
+18
+ 
+19
+df -m
+20
+查看磁盘情况
+21
+2、日志查看
+22
+tail -f /letv/server/logs/basews/basews-debug.log -n200
+23
+实时跟踪日志，打印最后的200行
+24
+ 
+25
+tail -f /letv/server/logs/ | grep '4107068312171' -C 5
+26
+实时跟踪日志中含有4107068312171的行，打印前后5行
+27
+ 
+28
+grep '4107063881248.*result' /letv/server/logs/oom-worker/oom-worker.log -C 5  --color=auto
+29
+查找日志中含有4107063881248和result的行，打印前后5行，标记颜色
